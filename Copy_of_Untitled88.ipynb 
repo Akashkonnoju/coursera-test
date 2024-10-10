@@ -1,0 +1,723 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Akashkonnoju/coursera-test/blob/main/Copy_of_Untitled88.ipynb%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "7A_2s3sGg8C2"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**For Loop**\n",
+        "A for loop in programming is used to repeat a block of code for each item in a collection."
+      ],
+      "metadata": {
+        "id": "YIgn-gT7g4hg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruit = ['apple','banana','mango','orange']\n",
+        "\n",
+        "for i in fruit:\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "epLHt8EeiP6f",
+        "outputId": "9ba51dfd-cb0e-4e6a-9a00-d880bca94e7d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "apple\n",
+            "banana\n",
+            "mango\n",
+            "orange\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = [10,20,30,40,50]\n",
+        "Total = 0                       # 100\n",
+        "\n",
+        "\n",
+        "for num in number:\n",
+        "  Total += num #Total = Total + num\n",
+        "               # Total = 0 + 10 = 10\n",
+        "\n",
+        "print(\"Total Sum : \", Total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ceE8BhGhidrS",
+        "outputId": "2d945d2c-da75-43f4-c50b-4c12ec8b86da"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Total Sum :  150\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = ['banana']\n",
+        "for i in a:\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xhu7PvhKmlN4",
+        "outputId": "d5524909-cc2f-4d82-c2b5-99d731864f82"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "banana\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruit = ['apple','banana','mango','orange']\n",
+        "\n",
+        "for i in fruit:\n",
+        "  if i == 'mango':\n",
+        "    break\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oi-4-CZqqHES",
+        "outputId": "caa4e904-0e3a-4b9a-a24c-cf7dc4070550"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "apple\n",
+            "banana\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruit = ['apple','banana','mango','orange']\n",
+        "\n",
+        "for x in fruit:\n",
+        "  if x == 'banana':\n",
+        "    continue\n",
+        "  print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o8lqpgyXqp7X",
+        "outputId": "6186bcff-078f-4936-ec31-9b95deff5164"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "apple\n",
+            "mango\n",
+            "orange\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(5):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sfLLJSpnsMSV",
+        "outputId": "fac7979b-9c4a-4430-c65e-fcabd4cd6082"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(2,5):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sWCWWSHStYQg",
+        "outputId": "ab9edf9f-b02b-4af4-9915-07729e082a69"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**While Loop**\n",
+        "A while loop is a control structure in programming that repeatedly executes a block of code as long as specified condition is true."
+      ],
+      "metadata": {
+        "id": "FhPrc-kNub3G"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 1\n",
+        "while i < 6:\n",
+        "  print(i)\n",
+        "  i += 1  # i = i+1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0TwtrHjZtp_F",
+        "outputId": "2b4b4f8f-7b87-4f92-fcf4-f64859cca071"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 1\n",
+        "while i < 6:\n",
+        "  print(i)\n",
+        "  if i == 3:\n",
+        "    break\n",
+        "  i += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jblMfDmTu5C3",
+        "outputId": "802182c8-7bc1-4ed9-b5ed-c7873e3f308b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 1\n",
+        "while i < 6:\n",
+        "  i += 1\n",
+        "  if i == 3:\n",
+        "    continue\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "id": "MVoGfQxgyZ71"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wbeZ9R5-zci-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install numpy"
+      ],
+      "metadata": {
+        "id": "jJO6MPZ419MG",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "928a88c2-cc32-4c8d-d0ba-067d44c9f14d"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.10/dist-packages (1.26.4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "var = np.array([23,34,65,76,86,98])\n",
+        "print(var)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WbK7Stqfsdxg",
+        "outputId": "8223b37d-d47b-470a-837f-a02154412085"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[23 34 65 76 86 98]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type (var)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gq0ANneds9i9",
+        "outputId": "fcf116cb-03ff-4e38-df09-6f22be8224dc"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "numpy.ndarray"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#For 0 dimensional array\n",
+        "var0 = np.array(23)\n",
+        "print(var0)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "erKSDJnttAwW",
+        "outputId": "51a0323b-14ab-4410-9a1a-9882fc11953e"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "23\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#for 1 dimensional array\n",
+        "var1 = np.array([23,54,32,64,76])\n",
+        "print(var1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kz4ZfJCUuQwC",
+        "outputId": "27830745-33cf-4840-a84a-26d748046ac0"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[23 54 32 64 76]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#for 2-D array\n",
+        "var2 = np.array([[23,43,64],[45,98,26]])\n",
+        "print(var2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5OGX3ZfUui4-",
+        "outputId": "b3738561-d120-4ff8-91a7-58f2f45684d7"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[23 43 64]\n",
+            " [45 98 26]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var4 = np.array([12,25,56], ndmin=10)\n",
+        "print(var4)\n",
+        "print(\"Dimension :\",var4.ndim)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WHAXjjkUwxrG",
+        "outputId": "220f0cf7-10de-4cb4-aaf3-445fc318c02b"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[[[[[[[[[12 25 56]]]]]]]]]]\n",
+            "Dimension : 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#indexing\n",
+        "#for 1 dimensional array\n",
+        "\n",
+        "var1 = np.array([22,89,58,36])\n",
+        "print(var1[2:5])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B0WWTmgH0Dee",
+        "outputId": "ae5be12e-cd2a-45be-bfbd-9f0537e7183d"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[58 36]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#for 2-D array\n",
+        "var2= np.array([[23,25,89],[56,45,20]])\n",
+        "print(var2[1,2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l3aZ1NrT0fpa",
+        "outputId": "e74648db-7b6d-4dd1-93cc-fff9e9782c25"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "first row is 0\n",
+        "second row is 1\n",
+        "so 1 row , 2 num it will be 20\n",
+        "\n",
+        "always start counting from 0"
+      ],
+      "metadata": {
+        "id": "PAqPcy0j1XC_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#for 3-D array\n",
+        "var3= np.array([[[23,25,89],[56,45,20]],[[23,25,89],[56,45,20]]])\n",
+        "print(var3[0,1,2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Dv33Uefs1MAF",
+        "outputId": "9e7ef848-7da4-4d8d-cac2-839d209c7695"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr= np.array(['bike','car','plane'])\n",
+        "print(arr)\n",
+        "type(arr)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a0lQznWA37ij",
+        "outputId": "6677c88a-44c3-498d-eb6c-b3990bef7257"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['bike' 'car' 'plane']\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "numpy.ndarray"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var1 = np.array([20,56,32,64,76])\n",
+        "print(var1.shape)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ja-NSlkE5jBZ",
+        "outputId": "4745a911-94e8-4a3b-cd45-290294cafaaa"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(5,)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var2 = np.array([[23,43,64],[45,98,26]])\n",
+        "print(var2.shape)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CNy9_N0D58Er",
+        "outputId": "570c98c5-8327-44e8-9053-8e39076b8bf1"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(2, 3)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var3 = np.array([[[56,58,65],[56,89,78]],[[20,56,14],[10,14,24]]])\n",
+        "print(var3.shape)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NpphLk2P6ANq",
+        "outputId": "1edaa9fa-f412-4e3d-fd20-7c743e75e680"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(2, 2, 3)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "nvVaue3n7jwb"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
